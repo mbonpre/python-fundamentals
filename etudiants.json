@@ -1,16 +1,8 @@
 [
     {
-        "nom": "Precieux",
-        "age": 20
-    },
-    {
-        "nom": "Precieux",
-        "age": 20
-    },
-    {
-        "nom": "Toto",
+        "nom": "toni",
         "notes": [
-            18.0,
+            20.0,
             19.0
         ]
     }

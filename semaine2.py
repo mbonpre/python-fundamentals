@@ -31,7 +31,7 @@ class Promotion:
         self.etudiants.append(etudiant)
     def meilleuretudiant(self):
         meilleur= max(self.etudiants,key=lambda e:e.calculerMoyenne())
-        print(f"le meilleur etudiant est {meilleur.nom}")
+        return meilleur.nom
     def affichage_classement(self):
         etudiants_tri=sorted(self.etudiants,key=lambda e:e.calculerMoyenne(),reverse=True)
         #print(etudiants)

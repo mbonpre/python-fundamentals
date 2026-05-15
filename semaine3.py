@@ -22,10 +22,10 @@ def ajouter_etudiant(etudiants):
                     notes.append(note)
                     break  # ✅ on sort de la boucle si c'est valide
                 else:
-                    print("❌ Note invalide (entre 0 et 20)")
+                    print(" Note invalide (entre 0 et 20)")
 
             except ValueError:
-                print("❌ Entre un nombre valide")1
+                print("Entre un nombre valide")
 
     etudiants.append({"nom": nom, "notes": notes})
 
@@ -37,7 +37,7 @@ def ajouter_etudiant(etudiants):
 
 def afficher_bulletin(etudiants):
     if not etudiants:
-        print("❌ Aucun étudiant enregistré !")
+        print(" Aucun étudiant enregistré !")
         return
 
     resultat = []
@@ -55,7 +55,7 @@ def afficher_bulletin(etudiants):
 
 def meilleur_etudiant(etudiants):
     if not etudiants:
-        print("❌ Aucun étudiant enregistré !")
+        print(" Aucun étudiant enregistré !")
         return
 
     meilleur = max(etudiants, key=lambda e: sum(e["notes"]) / len(e["notes"]))
