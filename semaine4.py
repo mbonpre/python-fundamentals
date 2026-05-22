@@ -65,7 +65,7 @@ def afficher_admis(etudiants):
     print("\n=== ADMIS ===")
     for e in admis:
         moy = round(sum(e["notes"])/len(e["notes"]), 2)
-        print(f"✅ {e['nom']} — {moy}/20")
+        print(f"4 {e['nom']} — {moy}/20")
     print("=============\n")
 
 def classement(etudiants):
